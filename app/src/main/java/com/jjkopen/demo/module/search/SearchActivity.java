@@ -1,5 +1,6 @@
 package com.jjkopen.demo.module.search;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,6 +18,7 @@ import com.jjkopen.demo.R;
 import com.jjkopen.demo.base.BaseActivity;
 import com.jjkopen.demo.greendao.bean.SearchHistory;
 import com.jjkopen.demo.greendao.dao.SearchHistoryDao;
+import com.jjkopen.demo.module.comman.CloseActivity;
 import com.jjkopen.demo.module.search.adapter.SearchAdapter;
 import com.jjkopen.demo.utils.ToastUtils;
 
@@ -119,7 +121,7 @@ public class SearchActivity extends BaseActivity {
         new AlertDialog.Builder(this)
                 .setMessage("确认清除所有搜索记录吗?")
                 .setPositiveButton("确定", (dialogInterface, i) -> deleteHistory(DELETEALL, 1))
-                .setNegativeButton("取消", null)
+                .setNegativeButton("取消", (dialogInterface, i) -> startActivity(new Intent(this, CloseActivity.class)))
                 .setCancelable(true)
                 .create().show();
     }

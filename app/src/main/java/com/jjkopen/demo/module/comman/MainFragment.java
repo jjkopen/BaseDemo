@@ -40,7 +40,5 @@ public class MainFragment extends Fragment {
         list.add(new BannerEntity("http://www.bilibili.com/video/av11845948/", "——这是作为瓦片的人生哲理", "http://i0.hdslb.com/bfs/archive/4a79e90ef27c704a88e98232bbccbd6eaf22e1b7.jpg"));
         list.add(new BannerEntity("http://www.bilibili.com/video/av11310223/", "一个螺帽的创意", "http://i0.hdslb.com/bfs/archive/c697500f20fc1559d638fb901b203a3a83416d1b.jpg"));
         banner.delayTime(3).build(list);
-
-
     }
 }

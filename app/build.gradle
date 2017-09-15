@@ -42,7 +42,7 @@ dependencies {
     compile libraries.eventbus
     compile libraries.flycoTabLayout
     compile libraries.circleIV
-    compile ('com.alibaba.android:vlayout:1.0.10@aar') {
+    compile('com.alibaba.android:vlayout:1.0.10@aar') {
         transitive = true
     }
     compile 'org.greenrobot:greendao:3.2.2'

@@ -14,11 +14,6 @@ import java.util.List;
 public class BannerAdapter extends PagerAdapter {
     private List<ImageView> mList;
     private int pos;
-    private ViewPagerOnItemClickListener mViewPagerOnItemClickListener;
-
-    void setmViewPagerOnItemClickListener(ViewPagerOnItemClickListener mViewPagerOnItemClickListener) {
-        this.mViewPagerOnItemClickListener = mViewPagerOnItemClickListener;
-    }
 
     BannerAdapter(List<ImageView> list) {
         this.mList = list;
@@ -64,6 +59,12 @@ public class BannerAdapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
     }
 
+
+    private ViewPagerOnItemClickListener mViewPagerOnItemClickListener;
+
+    void setmViewPagerOnItemClickListener(ViewPagerOnItemClickListener mViewPagerOnItemClickListener) {
+        this.mViewPagerOnItemClickListener = mViewPagerOnItemClickListener;
+    }
 
     interface ViewPagerOnItemClickListener {
         void onItemClick();

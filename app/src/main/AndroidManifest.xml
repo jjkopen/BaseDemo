@@ -19,35 +19,39 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity-->
-        <!--android:name=".module.comman.SplashActivity"-->
-        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">-->
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.MAIN" />-->
 
-        <!--<category android:name="android.intent.category.LAUNCHER" />-->
-        <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name=".module.comman.SplashActivity" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
-            android:name=".module.comman.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:name=".module.comman.CloseActivity"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
 
-
-        <!--<activity-->
-        <!--android:name=".module.comman.LoginActivity"-->
-        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />-->
+        <!-- <activity -->
+        <!-- android:name=".module.comman.LoginActivity" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" /> -->
         <activity
             android:name=".module.comman.MainActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".module.vlayout.VHomeActivity" />
         <activity android:name=".module.search.SearchActivity" />
         <activity android:name=".module.shop.ShoppingCarActivity" />
+        <activity
+            android:name=".module.comman.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
     </application>
 
 </manifest>

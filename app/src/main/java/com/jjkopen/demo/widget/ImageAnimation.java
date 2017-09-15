@@ -3,6 +3,7 @@ package com.jjkopen.demo.widget;
 /**
  * Created by jjkopen on 2017/7/23 0023.
  * 解决大量图片帧动画真机OOM,传入ImageView,图片[],duration(或duration[])
+ * 替换原 帧动画
  */
 
 import android.os.Handler;

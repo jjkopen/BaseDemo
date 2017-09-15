@@ -55,4 +55,5 @@ public class SplashActivity extends BaseActivity {
         animation.cancel();
         EventBus.getDefault().unregister(this);
     }
+
 }
